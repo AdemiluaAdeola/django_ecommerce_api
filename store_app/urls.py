@@ -5,7 +5,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework_nested import routers
 
 
-router = routers.DefaultRouter()
+router = DefaultRouter()
 
 router.register("products", views.ProductsViewSet)
 router.register("categories", views.CategoryViewSet)
@@ -22,6 +22,6 @@ cart_router.register("items", views.CartItemViewSet, basename="cart-items")
 
 urlpatterns = [
     path("", include(router.urls)),
-    path("", include(product_router.urls)),
-    path("", include(cart_router.urls))
+    path("products/", include(product_router.urls)),
+    path("cart/", include(cart_router.urls))
 ]
