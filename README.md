@@ -74,4 +74,6 @@ Admin Dashboard:
 
 </li>
 </ol>
+
+
 By creating an API, this Django eCommerce solution can be connected to various frontend interfaces, like mobile apps or web apps, making it flexible and scalable for diverse eCommerce applications.
